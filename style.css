@@ -1,0 +1,17 @@
+#box {
+    background-color: aquamarine;
+    color: maroon;
+}
+
+.heading{
+    color: beige;
+}
+
+button{
+    background-color: green;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
