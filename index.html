@@ -4,64 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h3{
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
-    <h3>Afsar Khan</h3>
-        <table width="1000" border="1">
-            <colgroup>
-                <col span="3" style="background-color: red;">
-                <col span="2" style="background-color: brown">
-            </colgroup>
-            <caption>Employee details</caption>
-            <thead>
-                <tr>
-                    <th>Sr.no</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><center>1</center></td>
-                    <td><center>Afsar Khan</center></td>
-                    <td><center>ka4845642gmail.com</center></td>
-                </tr>
-                <tr>
-                    <td><center>2</center></td>
-                    <td><center>Imran Khan Pathan</center></td>
-                    <td><center>kdcskc@gmail.com</center></td>
-                </tr>
-                <tr>
-                    <td><center>3</center></td>
-                    <td><center>Ismail Khan</center></td>
-                    <td><center>ismail331@gmail.com</center></td>
-                </tr>
-            </tbody>
-        </table>  
+    <ol>  
+        <li><data value="131">Java Tutorial</data></li>  
+        <li><data value="111">SQL tutorial</data></li>  
+        <li><data value="121">HTML tutorial</data></li>  
+        </ol>
 
-        <p>A famous book:  
-            <cite> Learning Web Design</cite> written by Jennifer Niederst Robbins  
-          </p>
 
-        <code>
-            class Afsar{
-                public static void main(String[] args){
-                    System.out.println("Hello World")
-                }
-            }
-        </code>
 
-        <em>afsar</em><br>
-        <strong>afsar</strong><br>
-        <dfn>afsar</dfn><br>
-        <code>afsar</code><br>
-        <samp>afsar</samp><br>
-        <kbd>afsar</kbd><br>
-        <var>afsar</var>
+    <label>
+        Enter your favorite cricket player <br>
+        <input type="text" id="fav" list="fav">
+        <datalist id="fav">
+            <option value="sachin">
+            <option value="virat">
+            <option value="Ashraf">
+            <option value="moin">
+        </datalist>
+    </label>
+
+
+    <dl>
+        <dt>HTML</dt>
+        <dd> is a markup language</dd>
+
+        <dt>Java</dt>
+        <dd>is a high level, OOPs based, <del>secured,</del> robust programming language</dd>
+
+        <dt>Python</dt>
+        <dd>is a high level, general purpose programming language</dd>
+    </dl>
+
+
+
+    <details>  
+        <summary>Copyright 2011-2014.</summary>  
+        <p> - by JavaTpoint. All Rights Reserved.</p>  
+        <p>All content and graphics on this web site are the property of the javatpoint.com</p>  
+        </details>  
+        <p><b>Note:</b> The <dfn>details</dfn> tag is currently only supported in Opera, Chrome, and in Safari 6.</p> 
+        
+        
+    <div>
+        <dialog id="myFirstDialogue" style="width:50%; background-color:red; border: 1px; dotted black;">
+            <p>
+                <q>
+                    i am from India
+                </q> - <cite>Oscar</cite>
+            </p>
+            <button id="hide">close</button>
+        </dialog>
+        <button id="show">open</button>
+    </div>
+
+
+    <h2>Example of dir tag</h2>  
+    <p>List of javaTpoint popular Tutorials</p>  
+      <dir>  
+      <li>Java-tutorial</li>  
+      <li>DBMS-tutorial</li>  
+      <li>DataStructure-tutorial</li>  
+      <li>HTML-tutorial</li>  
+     </dir>
+
+    <script type="text/JavaScript">
+        (function(){
+            var dialog = document.getElementById('myFirstDialogue');
+            document.getElementById('show').onclick = function(){
+                dialog.close();
+            };
+        });
+    </script>
 </body>
 </html>
