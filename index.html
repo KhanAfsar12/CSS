@@ -5,80 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /*class*/
-        .city{
-            background-color: burlywood;
-            color: red;
-            border: 2px solid black;
-            margin: 20px;
-            padding: 20px;
-        }
-
-        .note{
-            color: brown;
-            font-size: 50px;
-        }
-
-           /* id*/
-        #myHeader{
-            background-color: gold;
-            padding: 20px;
-            text-align: center;
-            color: violet;
-        }
-    
-        div{
-            width: 25%;
-        }
-
-        body{
+        /*body{
             background-image: url("Afasr_bhai.jpg");
             background-repeat: no-repeat;
-            background-position: right;
-        }
+            background-position: center;
+            background-attachment: fixed;
+            background-size:contain, cover;
+            height: 100px;
+            /*background: url("Afasr_bhai.jpg") no-repeat right top fixed;
+        }*/
+        /*p{border-style: dotted dashed double solid;
+            border-color: hsl(0, 100%, 50%);
+        }*/
+
+
+        /*p{
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: double;
+            border-left-style: solid;
+        }*/
+
+        /*p{
+            border: 6px solid red;
+            border-radius: 50px;
+            text-align: center;
+        }*/
+
+
+        p {
+            margin: auto;
+          }
+
+
     </style>
 </head>
 <body>
-    <!-- class -->
-    <div class="city">
-        <h2 >Mumbai</h2>
-        <p>Mumbai is the capital of Maharashtra.</p>
-    </div>
-    <div class="city">
-        <h2>Ghatkopar</h2>
-        <p>Ghatkopar is a heart of Mumbai.</p>
-    </div>
-
-
-    <h1>My <span class="note">name</span> is Afsar</h1>
-    <p>Anjuman Khairul Islam <span class="note">Urdu</span> school.</p>
-
-    <h2 class="city main">London</h2>
-    <h2 class="city">Paris</h2>
-    <h2 class="city">Tokyo</h2>
-
-
-    <!-- id -->
-    <h1 id="myHeader">Afsar Khan</h1>
-    <h1 id="C4">Chapter 4</h1>
-    <a href="#C4">Jump to the link</a>
-
-
-    <div>
-        Afsar
-    </div>
-
-    <script>
-        function myFunction(){
-            var x = document.getElementsByClassName('city');
-            for(var i=0; i<x.length; i++){
-                x[i].style.display = "none";
-            }
-        }
-
-        function displayResult(){
-            document.getElementById("#C4s").innerHTML = "Have a nice day!";
-        }   
-    </script>
+    <p>Python is a hogh level programming language.</p>
 </body>
 </html>
