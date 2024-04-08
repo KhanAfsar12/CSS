@@ -4,46 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /*class*/
+        .city{
+            background-color: burlywood;
+            color: red;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .note{
+            color: brown;
+            font-size: 50px;
+        }
+
+           /* id*/
+        #myHeader{
+            background-color: gold;
+            padding: 20px;
+            text-align: center;
+            color: violet;
+        }
     
+        div{
+            width: 25%;
+        }
+
+        body{
+            background-image: url("Afasr_bhai.jpg");
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+    </style>
 </head>
 <body>
-    <strong>This text is important!</strong><br>
-    <b>This text is bold!</b><br>
-    <i>This text is italic!</i><br>
-    <em>This text is emphsis!</em><br>
-    <small>This is some smaller text!</small>
-    <p>Do not forget to buy a <mark>milk</mark> today</p>
-    <p>My favorite color is <del>black</del></p>
-    <p>My favorite color is <del>black</del> <ins>blue</ins>.</p>
-    <p>This is <sub>subscripted</sub> text.</p>
-    <p>This is <sup>superscripted</sup> text.</p>
-
-    <a href="mailto: ka484564@gmail.com">send Email</a>
+    <!-- class -->
+    <div class="city">
+        <h2 >Mumbai</h2>
+        <p>Mumbai is the capital of Maharashtra.</p>
+    </div>
+    <div class="city">
+        <h2>Ghatkopar</h2>
+        <p>Ghatkopar is a heart of Mumbai.</p>
+    </div>
 
 
-    <dl>
-        <dt>Coffee</dt>
-        <dd>- black hot drink</dd>
-        <dt>Milk</dt>
-        <dd>- white cold drink</dd>
-      </dl>
+    <h1>My <span class="note">name</span> is Afsar</h1>
+    <p>Anjuman Khairul Islam <span class="note">Urdu</span> school.</p>
+
+    <h2 class="city main">London</h2>
+    <h2 class="city">Paris</h2>
+    <h2 class="city">Tokyo</h2>
 
 
-      <h1 style="background-color:DodgerBlue;">Hello World</h1>
-<p style="background-color:Tomato;">Lorem ipsum...</p>
+    <!-- id -->
+    <h1 id="myHeader">Afsar Khan</h1>
+    <h1 id="C4">Chapter 4</h1>
+    <a href="#C4">Jump to the link</a>
 
 
-<h1 style="border:2px solid Tomato;">Hello World</h1>
-<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
-<h1 style="border:2px solid Violet;">Hello World</h1>
+    <div>
+        Afsar
+    </div>
 
+    <script>
+        function myFunction(){
+            var x = document.getElementsByClassName('city');
+            for(var i=0; i<x.length; i++){
+                x[i].style.display = "none";
+            }
+        }
 
-<h1 style="background-color:rgb(255, 99, 71);">...</h1>
-<h1 style="background-color:#ff6347;">...</h1>
-<h1 style="background-color:hsl(9,100%, 64%);">...</h1>
-
-<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
-<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
-
+        function displayResult(){
+            document.getElementById("#C4s").innerHTML = "Have a nice day!";
+        }   
+    </script>
 </body>
 </html>
