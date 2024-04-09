@@ -1,89 +1,70 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>gfg</title>
-	<style type=text/css>
-		p {
-			background-color: gray;
-			margin: 10px;
-		}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all-browsers{
+            margin: 0px;
+            padding: 5px;
+            background-color: lightgrey;
+        }
 
-		div {
-			color: white;
-			background-color: 009900;
-			margin: 2px;
-			font-size: 25px;
-		}
-	</style>
+        .all-browsers > h1, .browser{
+            margin: 10px;
+            padding: 5px;
+        }
 
+        .browser{
+            background: white;
+        }
+
+        .browser > h2, p{
+            margin: 4px;
+            font-size: 20px;
+        }
+    </style>
 </head>
-
 <body>
-    <h1>GeeksforGeeks</h1>
-    <p>How many times were you frustrated while looking out
-        for a good collection of programming/algorithm/interview
-        questions? What did you expect and what did you get?
-        This portal has been created to provide well written,
-        well thought and well-explained solutions for selected
-        questions.
-    </p>
-    <h2>GeeksforGeeks</h2>
-    <p>GCET is an entrance test for the extensive classroom
-        program by GeeksforGeeks to build and enhance Data
-        Structures and Algorithm concepts, mentored by Sandeep
-        Jain (Founder & CEO, GeeksforGeeks).He has 7 years of
-        teaching experience and 6 years of industry experience.
-    </p>
-
-	<div> div tag </div>
-	<div> div tag </div>
-	<div> div tag </div>
-	<div> div tag </div>
-
-
-    <center>
-        <div style="height:300px; width:500px; color:white;
-            border:1px solid; background-color: 009900;">
-            <!--open tag of Div!-->
-            <caption>
-                <h1>GEEKSFORGEEKS</h1>
-            </caption>
-            <h1>Inline CSS is USED in THIS method.
-                In this div no class is used.
-            </h1>
-        </div>
-        <!--closing tag of Div!-->
-    </center>
-
-    <!-- section -->
-    <section>
-        <h1>WWF</h1>
-        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
-        </section>
-        
-        <section>
-        <h1>WWF's Panda symbol</h1>
-        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
-        </section>
-
-
-    <!-- article -->
-    <article>
-        <h2>Google Chrome</h2>
-        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    <article class="all-browsers">
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+          <h2>Google Chrome</h2>
+          <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
         </article>
-        
-        <article>
-        <h2>Mozilla Firefox</h2>
-        <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        <article class="browser">
+          <h2>Mozilla Firefox</h2>
+          <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
         </article>
-        
-        <article>
-        <h2>Microsoft Edge</h2>
-        <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
-    </article>
+        <article class="browser">
+          <h2>Microsoft Edge</h2>
+          <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+      </article>
 
-    
+
+      <article>
+        <header>
+          <h1>What Does WWF Do?</h1>
+          <p>WWF's mission:</p>
+        </header>
+        <p>WWF's mission is to stop the degradation of our planet's natural environment,
+        and build a future in which humans live in harmony with nature.</p>
+      </article>
+
+
+      <footer>
+        <p>Author: Hege Refsnes</p>
+        <p><a href="mailto:ka484564@gmail.com">hege@example.com</a></p>
+      </footer>
+
+
+      <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+<h4>Epcot Center</h4>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
 </body>
-
 </html>
