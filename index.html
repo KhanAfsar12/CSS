@@ -5,42 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /*body{
-            background-image: url("Afasr_bhai.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            background-size:contain, cover;
-            height: 100px;
-            /*background: url("Afasr_bhai.jpg") no-repeat right top fixed;
-        }*/
-        /*p{border-style: dotted dashed double solid;
-            border-color: hsl(0, 100%, 50%);
-        }*/
-
-
-        /*p{
-            border-top-style: dotted;
-            border-right-style: solid;
-            border-bottom-style: double;
-            border-left-style: solid;
-        }*/
-
-        /*p{
-            border: 6px solid red;
-            border-radius: 50px;
-            text-align: center;
-        }*/
-
-
-        p {
-            margin: auto;
+        div {
+            width: 320px;
+            height: 70px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 20px;
           }
+          
+        p.ex1{
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: #ff0000;
+            outline-width: thin;
+        }
+        p.ex2{
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: hsl(90, 100%, 50%);
+            outline-width: medium;
+        }
+        p.ex3{
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: rgb(197, 235, 73);
+            outline-width: thick;
+        }
+        p.ex4{
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: rgb(75, 39, 112);
+            outline-width: 4px;
+        }
 
-
+        /*outline shorthand*/
+        p.ex5{
+            border: 1px solid black;
+            outline: 5px solid brown;  /*outline-width outline-style outline-color */
+            outline-offset: 15px;
+            margin-top: 60px;
+            background: yellow;
+        }
     </style>
 </head>
 <body>
-    <p>Python is a hogh level programming language.</p>
+    <p>Python is a high level programming language.</p>
+    <div>Java is a high-level, oops based, secured, multithreaded,robust programming language that created by james gosling and his green team at java island.</div>
+    <p class="ex1">Python is a high level programming language.</p>
+    <p class="ex2">Python is a high level programming language.</p>
+    <p class="ex3">Python is a high level programming language.</p>
+    <p class="ex4">Python is a high level programming language.</p>
+    <p class="ex5">Python is a high level programming language.</p>
 </body>
 </html>
