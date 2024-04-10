@@ -1,31 +1,114 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-aside {
-  width: 30%;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: right;
-  font-style: italic;
-  background-color: lightgray;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Table</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            
+        }
+        /*table*/
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        form{
+            border: 2px solid black;
+            outline-width: 2px;
+            padding-top:10px;
+            padding-bottom: 10px; 
+            padding-left: 5px;
+            margin-right: 1055px; 
+        }
+        input, select{
+            color: black;
+            outline-style: solid;
+            outline-color:greenyellow ;
+        }
+
+        .container{
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
+    <!-- table -->
+    <h2>Table Example</h2>
+    <table>
+        <tr>
+            <th>A</th>
+            <th colspan="2">B</th>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+        </tr>
+    </table>
+    <hr>
+    <br><br>
 
-<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+    <h2>Application form</h2>
+    <div>
+    <form>
+        <input type="text" id="name" name="name" placeholder="Name"><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="Phone No."><br><br>
+        <input type="password" id="password" name="password" placeholder="Password"><br><br>
+        <input type="date" id="date" name="date" placeholder="Calender"><br><br>
+        <select name="gender" id="gender">
+            <option value="">Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <input type="checkbox" id="robot" name="robot"> <label for="robot">I am not a robot</label><br><br>
+        <input type="submit" value="Submit">
 
-<aside>
-<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-</aside>
-
-<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
-<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+    </form>
+    </div>
+    <hr>
+    <br><br>
 
 
-    <figure>
-        <img src="Afasr_bhai.jpg" alt="Trulli">
-        <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
-    </figure>
+    <h2>List Example</h2>
+    <div class="container">
+    <ul>
+        <li>A
+            <ul>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>D
+            <ul>
+                <li>E</li>
+                <li>F</li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>G
+            <ul>
+                <li>H</li>
+                <li>I</li>
+                <li>J</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
 </body>
 </html>
