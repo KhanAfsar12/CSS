@@ -5,36 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .flex-container{
-            display: flex;
-            height: 200px;
-            background-color: #f1f1f1;
+        * {
+          box-sizing: border-box;
         }
-        .flex-container > div{
-            background-color: dodgerblue;
-            color: white;
-            width: 100px;
-            margin: 10px;
-            text-align: center;
-            line-height: 75px;
-            font-size: 30px;
+        
+        .flex-container {
+          display: flex;
+          flex-direction: column;
+          font-size: 30px;
+          text-align: center;
         }
-    </style>
+        
+        .flex-item-left {
+          background-color: #f1f1f1;
+          padding: 10px;
+          flex: 50%;
+        }
+        
+        .flex-item-right {
+          background-color: dodgerblue;
+          padding: 10px;
+          flex: 50%;
+        }
+        
+        @media (max-width: 800px) {
+          .flex-item-left, .flex-item-right {
+            flex-direction: column;
+          }
+        }
+        </style>
 </head>
 <body>
     <div class="flex-container">
-        <div>1</div>
-        <div style="flex-shrink: 0">2</div>
-        <div style="flex-basis: 200px">3</div>
-        <div style="flex: 0 0 200px;">4</div>
-        <div>5</div>
-        <div style="align-self: center">6</div>
-        <div style="align-self: flex-start">7</div>
-        <div style="align-self: flex-end">8</div>
-        <div>9</div>
-        <div>10</div>
+        <div class="flex-item-left">1</div>
+        <div class="flex-item-right">2</div>
     </div>
-
-
 </body>
 </html>
