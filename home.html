@@ -1,39 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    .grid-container{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        background-color: #2196F3;
-        padding: 10px;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.example {
+  background-color: lightgrey;
+  padding: 20px;
+}
 
-    .grid-item{
-        background-color: rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(0,0,0,0.8);
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-    }
+@media screen and (min-width: 600px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
 </style>
 </head>
-
 <body>
-    <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
 
-    </div>
+<h2>Change the font size of an element on different screen sizes</h2>
+
+<div class="example">Example DIV.</div>
+
+<p>When the browser's width is 600px wide or less, set the font-size of DIV to 30px. When it is 601px or wider, set the font-size to 80px. Resize the browser window to see the effect.</p>
+
 </body>
 </html>
+
+
